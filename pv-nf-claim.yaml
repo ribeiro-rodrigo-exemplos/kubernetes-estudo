@@ -1,0 +1,11 @@
+apiVersion: v1 
+kind: PersistentVolumeClaim
+metadata:
+  name: pv-nf-claim
+spec:
+  storageClassName: slow
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
